@@ -17,7 +17,9 @@ export default class Layout extends React.Component {
   render(){
     return (
       <Provider store={store}>
-        <BaseLayout children={this.props.children} />
+        <BaseLayout>
+          {this.props.children}
+        </BaseLayout>
       </Provider>
     )
   }
