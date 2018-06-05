@@ -8,6 +8,15 @@ export default class Header extends React.Component {
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
         <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" type="text/css" href="/static/react-md.blue_grey-blue.min.css" />
+        <style>
+          {`
+            body {
+              margin: 0px;
+              padding: 0px;
+            }
+          `}
+        </style>
       </Head>
     )
   }
