@@ -1,6 +1,7 @@
 function GlobalReducer(state = {
 	initialize: false,
-	moduleSwitch: false
+	moduleSwitch: false,
+	data: []
 }, action){
 	switch(action.type){
 		case "CONSTANT_STRING":
@@ -9,6 +10,11 @@ function GlobalReducer(state = {
 			return {
 				...state,
 				initialize: true
+			}
+		case "CONSTANT_STRING_TEST":
+			return {
+				...state,
+				initialize: false
 			}
 		default: 
 			return {

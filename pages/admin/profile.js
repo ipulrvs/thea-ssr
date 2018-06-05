@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from './../../components/Layout'
 import { Link } from './../../routes'
+import DataForm from './../../components/DataForm'
 
 export default class Profile extends React.Component {
   static async getInitialProps({ query, req }) {
@@ -15,6 +16,7 @@ export default class Profile extends React.Component {
         </Link>
         {/* Example Using Router Link */}
         <h1>Profile</h1>
+        <DataForm />
       </Layout>
     )
   }
