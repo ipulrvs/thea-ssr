@@ -2,7 +2,7 @@ module.exports =
 
         __NEXT_REGISTER_PAGE('/admin/profile', function() {
           var comp = 
-      webpackJsonp([3],{
+      webpackJsonp([4],{
 
 /***/ "./components/BaseLayout.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -33,21 +33,9 @@ let Layout = class Layout extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.
             'div',
             null,
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Header__["a" /* default */], null),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'wrapper' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Sidebar__["a" /* default */], null),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'main-panel' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__Navbar__["a" /* default */], null),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'content' },
-                        this.props.children
-                    )
-                )
-            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Sidebar__["a" /* default */], null),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__Navbar__["a" /* default */], null),
+            this.props.children,
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Footer__["a" /* default */], null)
         );
     }
@@ -69,7 +57,7 @@ let Layout = class Layout extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.
         return;
     }
 
-    reactHotLoader.register(Layout, 'Layout', 'd:/Workspace/Project And Product/example-create-react-app/app-ssr-bundle/components/BaseLayout.js');
+    reactHotLoader.register(Layout, 'Layout', 'd:/Workspace/Atva Bags/thea-ssr/components/BaseLayout.js');
     leaveModule(module);
 })();
 
@@ -95,19 +83,7 @@ let Layout = class Layout extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.
 
 let Footer = class Footer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   render() {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      "div",
-      null,
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("script", { src: "/static/admin/js/jquery-3.2.1.min.js", type: "text/javascript" }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("script", { src: "/static/admin/js/bootstrap.min.js", type: "text/javascript" }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("script", { src: "/static/admin/js/material.min.js", type: "text/javascript" }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("script", { src: "/static/admin/js/chartist.min.js" }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("script", { src: "/static/admin/js/arrive.min.js" }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("script", { src: "/static/admin/js/perfect-scrollbar.jquery.min.js" }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("script", { src: "/static/admin/js/bootstrap-notify.js" }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("script", { src: "/static/admin/js/material-dashboard.js?v=1.2.0" }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("script", { src: "/static/admin/js/demo.js" })
-    );
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null);
   }
 
   __reactstandin__regenerateByEval(key, code) {
@@ -127,7 +103,7 @@ let Footer = class Footer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.
     return;
   }
 
-  reactHotLoader.register(Footer, "Footer", "d:/Workspace/Project And Product/example-create-react-app/app-ssr-bundle/components/Footer.js");
+  reactHotLoader.register(Footer, 'Footer', 'd:/Workspace/Atva Bags/thea-ssr/components/Footer.js');
   leaveModule(module);
 })();
 
@@ -161,21 +137,7 @@ let Header = class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.
       null,
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('meta', { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge,chrome=1' }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('meta', { content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0', name: 'viewport' }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('meta', { name: 'viewport', content: 'width=device-width' }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { href: '/static/admin/css/bootstrap.min.css', rel: 'stylesheet' }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { href: '/static/admin/css/material-dashboard.css?v=1.2.0', rel: 'stylesheet' }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { href: '/static/admin/css/demo.css', rel: 'stylesheet' }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { href: 'https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css', rel: 'stylesheet' }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { href: 'https://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons', rel: 'stylesheet' }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'style',
-        null,
-        `
-          .nav > li {
-            cursor: pointer
-          }
-        `
-      )
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('meta', { name: 'viewport', content: 'width=device-width' })
     );
   }
 
@@ -196,7 +158,7 @@ let Header = class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.
     return;
   }
 
-  reactHotLoader.register(Header, 'Header', 'd:/Workspace/Project And Product/example-create-react-app/app-ssr-bundle/components/Header.js');
+  reactHotLoader.register(Header, 'Header', 'd:/Workspace/Atva Bags/thea-ssr/components/Header.js');
   leaveModule(module);
 })();
 
@@ -242,7 +204,7 @@ let Layout = class Layout extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_3_react_redux__["Provider"],
       { store: store },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__BaseLayout__["a" /* default */], null)
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__BaseLayout__["a" /* default */], { children: this.props.children })
     );
   }
 
@@ -263,9 +225,9 @@ let Layout = class Layout extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.
     return;
   }
 
-  reactHotLoader.register(composeEnhancers, 'composeEnhancers', 'd:/Workspace/Project And Product/example-create-react-app/app-ssr-bundle/components/Layout.js');
-  reactHotLoader.register(store, 'store', 'd:/Workspace/Project And Product/example-create-react-app/app-ssr-bundle/components/Layout.js');
-  reactHotLoader.register(Layout, 'Layout', 'd:/Workspace/Project And Product/example-create-react-app/app-ssr-bundle/components/Layout.js');
+  reactHotLoader.register(composeEnhancers, 'composeEnhancers', 'd:/Workspace/Atva Bags/thea-ssr/components/Layout.js');
+  reactHotLoader.register(store, 'store', 'd:/Workspace/Atva Bags/thea-ssr/components/Layout.js');
+  reactHotLoader.register(Layout, 'Layout', 'd:/Workspace/Atva Bags/thea-ssr/components/Layout.js');
   leaveModule(module);
 })();
 
@@ -282,65 +244,37 @@ let Layout = class Layout extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 (function () {
-    var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-    enterModule && enterModule(module);
+  enterModule && enterModule(module);
 })();
 
 
 
 let Navbar = class Navbar extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
-    render() {
-        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "nav",
-            { className: "navbar navbar-transparent navbar-absolute" },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "div",
-                { className: "container-fluid" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "div",
-                    { className: "navbar-header" },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        "button",
-                        { type: "button", className: "navbar-toggle", "data-toggle": "collapse" },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            "span",
-                            { className: "sr-only" },
-                            "Toggle navigation"
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", { className: "icon-bar" }),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", { className: "icon-bar" }),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", { className: "icon-bar" })
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        "a",
-                        { className: "navbar-brand", href: "#" },
-                        " Dashboard "
-                    )
-                )
-            )
-        );
-    }
+  render() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('nav', null);
+  }
 
-    __reactstandin__regenerateByEval(key, code) {
-        this[key] = eval(code);
-    }
+  __reactstandin__regenerateByEval(key, code) {
+    this[key] = eval(code);
+  }
 
 };
 
 ;
 
 (function () {
-    var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
 
-    var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
 
-    if (!reactHotLoader) {
-        return;
-    }
+  if (!reactHotLoader) {
+    return;
+  }
 
-    reactHotLoader.register(Navbar, "Navbar", "d:/Workspace/Project And Product/example-create-react-app/app-ssr-bundle/components/Navbar.js");
-    leaveModule(module);
+  reactHotLoader.register(Navbar, 'Navbar', 'd:/Workspace/Atva Bags/thea-ssr/components/Navbar.js');
+  leaveModule(module);
 })();
 
 ;
@@ -383,82 +317,7 @@ let Sidebar = (_dec = __WEBPACK_IMPORTED_MODULE_3_redux_connect_decorator___defa
     }
 
     render() {
-        console.log(this.props.global);
-        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'sidebar', 'data-color': 'purple', 'data-image': '/static/admin/img/sidebar-2.jpg' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'logo' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'a',
-                    { className: 'simple-text' },
-                    'Admin Panel'
-                )
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'sidebar-wrapper' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'ul',
-                    { className: 'nav' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'li',
-                        { onClick: () => __WEBPACK_IMPORTED_MODULE_2_next_router___default.a.push('/admin-dashboard') },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'a',
-                            null,
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'i',
-                                { className: 'material-icons' },
-                                'dashboard'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                null,
-                                'Dashboard'
-                            )
-                        )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'li',
-                        { onClick: () => __WEBPACK_IMPORTED_MODULE_2_next_router___default.a.push('/admin-profile') },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'a',
-                            null,
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'i',
-                                { className: 'material-icons' },
-                                'person'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                null,
-                                'Profile'
-                            )
-                        )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'li',
-                        { onClick: () => __WEBPACK_IMPORTED_MODULE_2_next_router___default.a.push('/admin-menu') },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'a',
-                            null,
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'i',
-                                { className: 'material-icons' },
-                                'list'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                null,
-                                'Menu'
-                            )
-                        )
-                    )
-                )
-            )
-        );
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null);
     }
 
     __reactstandin__regenerateByEval(key, code) {
@@ -478,7 +337,7 @@ let Sidebar = (_dec = __WEBPACK_IMPORTED_MODULE_3_redux_connect_decorator___defa
         return;
     }
 
-    reactHotLoader.register(Sidebar, 'Sidebar', 'd:/Workspace/Project And Product/example-create-react-app/app-ssr-bundle/components/Sidebar.js');
+    reactHotLoader.register(Sidebar, 'Sidebar', 'd:/Workspace/Atva Bags/thea-ssr/components/Sidebar.js');
     leaveModule(module);
 })();
 
@@ -3710,25 +3569,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 let Profile = class Profile extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
-
-  componentDidMount() {
-    alert("B");
-  }
-
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      'div',
+      __WEBPACK_IMPORTED_MODULE_1__components_Layout__["a" /* default */],
       null,
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_1__components_Layout__["a" /* default */],
+        'h1',
         null,
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'h1',
-          null,
-          'Profile'
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/static/admin/img/sidebar-2.jpg' })
-      )
+        'Profile'
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/static/admin/img/sidebar-2.jpg' })
     );
   }
 
@@ -3749,7 +3599,7 @@ let Profile = class Profile extends __WEBPACK_IMPORTED_MODULE_0_react___default.
     return;
   }
 
-  reactHotLoader.register(Profile, 'Profile', 'd:/Workspace/Project And Product/example-create-react-app/app-ssr-bundle/pages/admin/profile.js');
+  reactHotLoader.register(Profile, 'Profile', 'd:/Workspace/Atva Bags/thea-ssr/pages/admin/profile.js');
   leaveModule(module);
 })();
 
@@ -3817,8 +3667,8 @@ const _default = GlobalReducer;
 		return;
 	}
 
-	reactHotLoader.register(GlobalReducer, "GlobalReducer", "d:/Workspace/Project And Product/example-create-react-app/app-ssr-bundle/store/Global.js");
-	reactHotLoader.register(_default, "default", "d:/Workspace/Project And Product/example-create-react-app/app-ssr-bundle/store/Global.js");
+	reactHotLoader.register(GlobalReducer, "GlobalReducer", "d:/Workspace/Atva Bags/thea-ssr/store/Global.js");
+	reactHotLoader.register(_default, "default", "d:/Workspace/Atva Bags/thea-ssr/store/Global.js");
 	leaveModule(module);
 })();
 
@@ -3859,8 +3709,8 @@ const _default = Reducers;
 		return;
 	}
 
-	reactHotLoader.register(Reducers, 'Reducers', 'd:/Workspace/Project And Product/example-create-react-app/app-ssr-bundle/store/Reducers.js');
-	reactHotLoader.register(_default, 'default', 'd:/Workspace/Project And Product/example-create-react-app/app-ssr-bundle/store/Reducers.js');
+	reactHotLoader.register(Reducers, 'Reducers', 'd:/Workspace/Atva Bags/thea-ssr/store/Reducers.js');
+	reactHotLoader.register(_default, 'default', 'd:/Workspace/Atva Bags/thea-ssr/store/Reducers.js');
 	leaveModule(module);
 })();
 
@@ -3869,7 +3719,7 @@ const _default = Reducers;
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/admin/profile.js");
@@ -3877,7 +3727,7 @@ module.exports = __webpack_require__("./pages/admin/profile.js");
 
 /***/ })
 
-},[2])
+},[3])
           return { page: comp.default }
         })
       ;

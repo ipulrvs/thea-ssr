@@ -67,7 +67,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -95,21 +95,9 @@ let Layout = class Layout extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.
             'div',
             null,
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Header__["a" /* default */], null),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'wrapper' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Sidebar__["a" /* default */], null),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'main-panel' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__Navbar__["a" /* default */], null),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'content' },
-                        this.props.children
-                    )
-                )
-            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Sidebar__["a" /* default */], null),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__Navbar__["a" /* default */], null),
+            this.props.children,
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Footer__["a" /* default */], null)
         );
     }
@@ -129,19 +117,7 @@ let Layout = class Layout extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.
 
 let Footer = class Footer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   render() {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      "div",
-      null,
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("script", { src: "/static/admin/js/jquery-3.2.1.min.js", type: "text/javascript" }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("script", { src: "/static/admin/js/bootstrap.min.js", type: "text/javascript" }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("script", { src: "/static/admin/js/material.min.js", type: "text/javascript" }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("script", { src: "/static/admin/js/chartist.min.js" }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("script", { src: "/static/admin/js/arrive.min.js" }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("script", { src: "/static/admin/js/perfect-scrollbar.jquery.min.js" }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("script", { src: "/static/admin/js/bootstrap-notify.js" }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("script", { src: "/static/admin/js/material-dashboard.js?v=1.2.0" }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("script", { src: "/static/admin/js/demo.js" })
-    );
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null);
   }
 };
 
@@ -167,21 +143,7 @@ let Header = class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.
       null,
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('meta', { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge,chrome=1' }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('meta', { content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0', name: 'viewport' }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('meta', { name: 'viewport', content: 'width=device-width' }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { href: '/static/admin/css/bootstrap.min.css', rel: 'stylesheet' }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { href: '/static/admin/css/material-dashboard.css?v=1.2.0', rel: 'stylesheet' }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { href: '/static/admin/css/demo.css', rel: 'stylesheet' }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { href: 'https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css', rel: 'stylesheet' }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { href: 'https://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons', rel: 'stylesheet' }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'style',
-        null,
-        `
-          .nav > li {
-            cursor: pointer
-          }
-        `
-      )
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('meta', { name: 'viewport', content: 'width=device-width' })
     );
   }
 };
@@ -222,7 +184,7 @@ let Layout = class Layout extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_3_react_redux__["Provider"],
       { store: store },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__BaseLayout__["a" /* default */], null)
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__BaseLayout__["a" /* default */], { children: this.props.children })
     );
   }
 };
@@ -240,37 +202,9 @@ let Layout = class Layout extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.
 
 
 let Navbar = class Navbar extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
-    render() {
-        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "nav",
-            { className: "navbar navbar-transparent navbar-absolute" },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "div",
-                { className: "container-fluid" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "div",
-                    { className: "navbar-header" },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        "button",
-                        { type: "button", className: "navbar-toggle", "data-toggle": "collapse" },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            "span",
-                            { className: "sr-only" },
-                            "Toggle navigation"
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", { className: "icon-bar" }),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", { className: "icon-bar" }),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", { className: "icon-bar" })
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        "a",
-                        { className: "navbar-brand", href: "#" },
-                        " Dashboard "
-                    )
-                )
-            )
-        );
-    }
+  render() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('nav', null);
+  }
 };
 
 
@@ -305,82 +239,7 @@ let Sidebar = (_dec = __WEBPACK_IMPORTED_MODULE_3_redux_connect_decorator___defa
     }
 
     render() {
-        console.log(this.props.global);
-        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'sidebar', 'data-color': 'purple', 'data-image': '/static/admin/img/sidebar-2.jpg' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'logo' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'a',
-                    { className: 'simple-text' },
-                    'Admin Panel'
-                )
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'sidebar-wrapper' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'ul',
-                    { className: 'nav' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'li',
-                        { onClick: () => __WEBPACK_IMPORTED_MODULE_2_next_router___default.a.push('/admin-dashboard') },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'a',
-                            null,
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'i',
-                                { className: 'material-icons' },
-                                'dashboard'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                null,
-                                'Dashboard'
-                            )
-                        )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'li',
-                        { onClick: () => __WEBPACK_IMPORTED_MODULE_2_next_router___default.a.push('/admin-profile') },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'a',
-                            null,
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'i',
-                                { className: 'material-icons' },
-                                'person'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                null,
-                                'Profile'
-                            )
-                        )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'li',
-                        { onClick: () => __WEBPACK_IMPORTED_MODULE_2_next_router___default.a.push('/admin-menu') },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'a',
-                            null,
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'i',
-                                { className: 'material-icons' },
-                                'list'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                null,
-                                'Menu'
-                            )
-                        )
-                    )
-                )
-            )
-        );
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null);
     }
 }) || _class);
 
@@ -400,25 +259,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 let Profile = class Profile extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
-
-  componentDidMount() {
-    alert("B");
-  }
-
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      'div',
+      __WEBPACK_IMPORTED_MODULE_1__components_Layout__["a" /* default */],
       null,
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_1__components_Layout__["a" /* default */],
+        'h1',
         null,
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'h1',
-          null,
-          'Profile'
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/static/admin/img/sidebar-2.jpg' })
-      )
+        'Profile'
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/static/admin/img/sidebar-2.jpg' })
     );
   }
 };
@@ -470,7 +320,7 @@ const Reducers = Object(__WEBPACK_IMPORTED_MODULE_0_redux__["combineReducers"])(
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/admin/profile.js");
